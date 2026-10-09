@@ -1,0 +1,20 @@
+﻿<Window x:Class="_1_1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_1_1"
+        mc:Ignorable="d"
+        Title="Meme Selector" Height="450" Width="800">
+    <DockPanel>
+        <ListBox Name="Caracteristic" DockPanel.Dock="Left" Width="200"></ListBox>
+        <StackPanel Width="400" Orientation="Vertical">
+            <StackPanel Orientation="Horizontal" Height="200">
+                <Frame Name="ChosenCaracteristic" Width="200"></Frame>
+                <Frame Name="ChosenRecentness" Width="200"></Frame>
+            </StackPanel>
+            <Image Name="Result"></Image>
+        </StackPanel>
+        <ListBox Name="Recentness" DockPanel.Dock="Right" Width="200"></ListBox>
+    </DockPanel>
+</Window>
